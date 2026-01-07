@@ -1,0 +1,20 @@
+# Example configuration file
+#
+# This file is embedded as a file asset via loader configuration (see build.ts).
+# It's not parsed at bundle time - it's embedded as raw text and can be read
+# at runtime using Bun.file() and parsed with Bun.YAML.parse().
+#
+# METHOD 2: Loader configuration bundles all .yml files as file assets.
+
+app:
+  name: "Bun File Bundler Demo"
+  version: "1.0.0"
+
+greeting:
+  message: "Hello from the embedded YAML config!"
+  recipient: "World"
+
+settings:
+  debug: true
+  max_retries: 3
+  timeout_ms: 5000
